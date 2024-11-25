@@ -231,12 +231,19 @@ nav div ul li a {
   transition: 1s ease;
 }
 
-.browse-container {
-  width: 100%;
+#BROWSE-TOPICS {
   height: 100vh;
+  width: 100%;
+  background-color: rgb(144, 183, 199);
+}
+
+.browse-container {
+  background-color: rgba(137, 173, 193, 0.331);
+  width: 100%;
+  height: 8vh;
   display: flex;
   justify-content: center;
-  gap: 20%;
+  gap: 50%;
   font-size: larger;
   line-height: 1;
   padding-top: 2%;
@@ -267,4 +274,276 @@ nav div ul li a {
   width: -moz-fit-content;
   width: fit-content;
   border-bottom: 2px solid rgba(9, 105, 156, 0.799);
+}
+
+.content-container {
+  display: flex;
+  gap: 0.5%;
+  width: 100%;
+  flex-wrap: wrap;
+  background-color: rgb(144, 183, 199);
+}
+
+.browse-design {
+  display: flex;
+  flex-direction: column;
+  width: 20%;
+  height: 10%;
+  line-height: 2;
+  margin-left: 2%;
+  border: 2px solid rgb(81, 135, 168);
+  border-radius: 5%;
+  text-align: center;
+  padding: 1%;
+  transition: 2s all ease;
+}
+
+.browse-design:hover,
+.browse-design:hover ~ .private-finance {
+  background-color: rgba(131, 188, 216, 0.941);
+  transition: 1.5s all ease;
+  transform: translate(0px, -20px);
+}
+
+.highlight {
+  color: rgb(200, 89, 206);
+}
+
+.web-img2 {
+  margin-left: 6%;
+  padding: 5%;
+}
+
+.browse-design:hover ~ .browse-design2,
+.browse-design:hover ~ .browse-design2 ~ .corporate-finance {
+  transition: 3s all ease;
+  transform: translate(0px, 20px);
+  background-color: rgb(78, 133, 115);
+}
+
+.browse-design2 {
+  transition: 2s all ease;
+  display: flex;
+  flex-direction: column;
+  width: 20%;
+  line-height: 1.5;
+  margin-left: 2%;
+  border: 2px solid rgb(81, 135, 168);
+  border-radius: 5%;
+  text-align: center;
+  padding: 1%;
+}
+.browse-design2 .graphic-img {
+  margin-left: 20%;
+  padding-top: 5%;
+}
+.browse-design2 .highlightgraphic-content {
+  color: rgb(30, 175, 30);
+}
+
+.browse-design2:hover {
+  background-color: rgba(96, 180, 149, 0.76);
+  transform: translate(0px, 20px);
+}
+
+.corporate-finance {
+  transition: 2s all ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  line-height: 1.4;
+  width: 20%;
+  border: 2px solid rgb(81, 135, 168);
+  border-radius: 5%;
+  margin-left: 1%;
+  padding: 1%;
+}
+.corporate-finance h4 {
+  margin-bottom: 2%;
+}
+.corporate-finance .corp-highlight {
+  color: green;
+}
+.corporate-finance p {
+  line-height: 1.5;
+}
+.corporate-finance img {
+  margin-top: 3%;
+}
+
+.corporate-finance:hover {
+  background-color: rgba(96, 180, 149, 0.76);
+  transform: translate(0px, 20px);
+  transition: 2s all ease;
+}
+
+.private-finance {
+  transition: 2s all ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 45%;
+  width: 22%;
+  border: 2px solid rgb(81, 135, 168);
+  border-radius: 5%;
+  margin-left: 1%;
+  padding: 1%;
+}
+.private-finance p {
+  margin-left: 3%;
+  line-height: 1;
+  padding-top: 2%;
+}
+.private-finance .pub-highlight {
+  color: rgb(47, 103, 171);
+}
+.private-finance img {
+  margin-top: 5%;
+}
+
+.private-finance:hover {
+  background-color: rgba(131, 188, 216, 0.941);
+  transition: 1.5s all ease;
+  transform: translate(0px, -20px);
+}
+
+.about-us {
+  height: 40vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(119, 160, 168);
+}
+.about-us .subclass-about-us {
+  width: 100%;
+  height: 60vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.about-us .subclass-about-us h1 {
+  margin-bottom: 4%;
+  font-size: xx-large;
+  width: -moz-fit-content;
+  width: fit-content;
+  border-bottom: 2px solid black;
+}
+.about-us .subclass-about-us p {
+  margin-bottom: 4%;
+  color: rgb(138, 53, 172);
+  font-size: large;
+}
+
+.footer-nav-container {
+  display: flex;
+  justify-content: space-around;
+  height: 60vh;
+  width: 100%;
+  align-items: center;
+  background-color: black;
+}
+.footer-nav-container .nav-links .subclass-nav-links {
+  width: 100%;
+  height: auto;
+  padding: 3%;
+}
+.footer-nav-container .nav-links .subclass-nav-links li {
+  list-style: none;
+}
+.footer-nav-container .nav-links .subclass-nav-links li a {
+  transition: 2s all ease;
+  line-height: 2.4;
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  padding: 2%;
+  width: 100%;
+}
+.footer-nav-container .nav-links .subclass-nav-links li .anchor-BT {
+  display: inline-block;
+  height: -moz-fit-content;
+  height: fit-content;
+  transition: 2s all ease;
+}
+.footer-nav-container .nav-links .subclass-nav-links li :hover {
+  transition: 2s all ease;
+  color: rgb(115, 43, 182);
+  border-left: 2px solid red;
+}
+.footer-nav-container .social-accounts {
+  color: white;
+  align-self: flex-start;
+  margin-top: 5%;
+}
+
+.subclass-social-accounts {
+  display: flex;
+  height: 30vh;
+  width: 25vw;
+  background-color: rgb(255, 255, 255);
+}
+.subclass-social-accounts .fab-twitt {
+  display: flex;
+  flex-direction: column;
+  gap: 1%;
+  background-color: rgb(174, 0, 0);
+  color: black;
+  width: 53%;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+}
+.subclass-social-accounts .fab-twitt #fb {
+  font-size: 42px;
+  padding: 15px;
+  position: relative;
+  left: 5px;
+  bottom: p;
+  color: rgb(51, 11, 171);
+  background-color: white;
+  border: 2px solid rgb(30, 30, 106);
+  border-radius: 100% 0% 0% 0%;
+}
+.subclass-social-accounts .fab-twitt #twitt {
+  position: relative;
+  left: 4px;
+  font-size: 42px;
+  padding: 15px;
+  color: rgb(10, 71, 194);
+  background-color: white;
+  border: 2px solid rgb(30, 30, 106);
+  border-radius: 0% 0% 0% 100%;
+}
+.subclass-social-accounts .insta-yt {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  top: 0;
+  right: 1%;
+  gap: 1%;
+  background-color: rgb(255, 254, 254);
+  color: black;
+  width: 0%;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+}
+.subclass-social-accounts #insta {
+  font-size: 43px;
+  padding: 15px;
+  color: rgb(231, 64, 220);
+  background-color: white;
+  border: 2px solid rgb(30, 30, 106);
+  border-radius: 0% 100% 0% 0%;
+}
+.subclass-social-accounts #yt {
+  font-size: 45px;
+  padding: 12px;
+  color: rgb(168, 20, 20);
+  background-color: white;
+  border: 2px solid rgb(30, 30, 106);
+  border-radius: 0% 0% 100% 0%;
 }/*# sourceMappingURL=style.css.map */
