@@ -8,6 +8,18 @@ body {
   box-sizing: border-box;
 }
 
+#checkbox {
+  display: none;
+}
+
+#burger-label {
+  display: none;
+}
+
+#burger {
+  display: none;
+}
+
 .nav-container {
   display: flex;
   width: 100%;
@@ -19,7 +31,7 @@ body {
 
 nav {
   display: flex;
-  width: 100vw;
+  width: 100%;
   height: 8vh;
   gap: 8%;
   justify-content: flex-start;
@@ -27,7 +39,6 @@ nav {
   align-items: center;
 }
 nav div i {
-  display: flex;
   color: rgb(0, 0, 0);
   border-radius: 100%;
   border: 2px solid black(0, 0, 0);
@@ -35,8 +46,8 @@ nav div i {
   height: 25px;
   text-align: center;
   background-color: rgb(255, 255, 255);
-  align-items: center;
   padding-top: 6px;
+  margin-left: -9%;
   transition: 1s ease-out;
   cursor: pointer;
 }
@@ -73,25 +84,9 @@ nav div ul li a {
   transition: 1.2s ease;
 }
 
-@media (max-width: 400px) {
-  #nav {
-    display: flex;
-    gap: 65%;
-  }
-  #nav #hamburger {
-    display: show;
-  }
-  #nav .page-heading {
-    display: show;
-  }
-  .nav-container {
-    font-size: 1em;
-    display: none;
-  }
-}
 .tagcontainer-div {
   height: 45vh;
-  width: 100vw;
+  width: 100%;
   background-color: rgba(36, 128, 141, 0.781);
 }
 
@@ -234,4 +229,42 @@ nav div ul li a {
   outline: 1.5px solid blue;
   box-sizing: border-box;
   transition: 1s ease;
+}
+
+.browse-container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  gap: 20%;
+  font-size: larger;
+  line-height: 1;
+  padding-top: 2%;
+}
+.browse-container .cont-h5 {
+  width: -moz-fit-content;
+  width: fit-content;
+  color: rgb(0, 59, 148);
+  cursor: pointer;
+  transition: 1.5s ease;
+}
+.browse-container .cont-h5:hover {
+  color: rgb(96, 172, 146);
+  transition: 1s ease;
+}
+
+.browse-head {
+  display: flex;
+  justify-content: center;
+  color: rgb(82, 82, 159);
+  font-family: serif;
+  font-size: small;
+  text-align: center;
+  padding-top: 5%;
+  background-color: rgba(137, 173, 193, 0.331);
+}
+.browse-head h1 {
+  width: -moz-fit-content;
+  width: fit-content;
+  border-bottom: 2px solid rgba(9, 105, 156, 0.799);
 }/*# sourceMappingURL=style.css.map */
