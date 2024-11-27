@@ -446,6 +446,9 @@ nav div ul li a {
   align-items: center;
   background-color: black;
 }
+.footer-nav-container .nav-links {
+  width: 10%;
+}
 .footer-nav-container .nav-links .subclass-nav-links {
   width: 100%;
   height: auto;
@@ -473,77 +476,51 @@ nav div ul li a {
   color: rgb(115, 43, 182);
   border-left: 2px solid red;
 }
-.footer-nav-container .social-accounts {
+
+.social-accounts {
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+  height: 50%;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.social-accounts a {
+  text-decoration: none;
   color: white;
-  align-self: flex-start;
-  margin-top: 5%;
+}
+.social-accounts div #instagram {
+  font-size: x-large;
+}
+.social-accounts div #facebook {
+  font-size: x-large;
+}
+.social-accounts div #twitter {
+  font-size: x-large;
+}
+.social-accounts div #youtube {
+  font-size: x-large;
 }
 
-.subclass-social-accounts {
+.social-div {
   display: flex;
-  height: 30vh;
-  width: 25vw;
-  background-color: rgb(255, 255, 255);
-}
-.subclass-social-accounts .fab-twitt {
-  display: flex;
-  flex-direction: column;
-  gap: 1%;
-  background-color: rgb(174, 0, 0);
-  color: black;
-  width: 53%;
-  height: 100%;
-  align-items: center;
   justify-content: center;
-}
-.subclass-social-accounts .fab-twitt #fb {
-  font-size: 42px;
-  padding: 15px;
-  position: relative;
-  left: 5px;
-  bottom: p;
-  color: rgb(51, 11, 171);
-  background-color: white;
-  border: 2px solid rgb(30, 30, 106);
-  border-radius: 100% 0% 0% 0%;
-}
-.subclass-social-accounts .fab-twitt #twitt {
-  position: relative;
-  left: 4px;
-  font-size: 42px;
-  padding: 15px;
-  color: rgb(10, 71, 194);
-  background-color: white;
-  border: 2px solid rgb(30, 30, 106);
-  border-radius: 0% 0% 0% 100%;
-}
-.subclass-social-accounts .insta-yt {
-  display: flex;
-  flex-direction: column;
-  position: relative;
-  top: 0;
-  right: 1%;
-  gap: 1%;
-  background-color: rgb(255, 254, 254);
-  color: black;
-  width: 0%;
-  height: 100%;
   align-items: center;
-  justify-content: center;
+  width: -moz-fit-content;
+  width: fit-content;
+  gap: 10%;
+  color: white;
 }
-.subclass-social-accounts #insta {
-  font-size: 43px;
-  padding: 15px;
-  color: rgb(231, 64, 220);
-  background-color: white;
-  border: 2px solid rgb(30, 30, 106);
-  border-radius: 0% 100% 0% 0%;
+
+.social-div-twitter {
+  display: flex;
+  align-items: center;
+  margin-right: 5%;
+  gap: 10%;
+  color: white;
 }
-.subclass-social-accounts #yt {
-  font-size: 45px;
-  padding: 12px;
-  color: rgb(168, 20, 20);
-  background-color: white;
-  border: 2px solid rgb(30, 30, 106);
-  border-radius: 0% 0% 100% 0%;
+
+.social-div.social-div:hover ~ #instagram, .social-div.social-div:hover ~ #instagram ~ .insta {
+  color: pink;
 }/*# sourceMappingURL=style.css.map */

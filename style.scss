@@ -477,7 +477,9 @@ nav{
     background-color: black;
 
   .nav-links{
+    width: 10%;
        .subclass-nav-links{
+        
         width: 100%;
         height: auto;
         // text-align: center;
@@ -508,105 +510,66 @@ nav{
            }
          }
         }
-        .social-accounts{
-            color: white;
-            align-self: flex-start;
-            margin-top: 5%;
+        
         }
 
-}
-
-.subclass-social-accounts{
+.social-accounts{
     display: flex;
+    flex-direction: column;
+    width: 30%; height: 50%;
     // gap: 10%;
-    height: 30vh;
-    width: 25vw;
-    background-color: rgb(255, 255, 255);
-    .fab-twitt{
-        display: flex;
-        flex-direction: column;
-        gap: 1%;
-        background-color: rgb(174, 0, 0);
-        color: black;
-        width:53%;
-        height: 100%;
-      
-        align-items: center;
-        justify-content: center;
-
-        #fb{
-            font-size: 42px;
-            padding: 15px;
-            position: relative;
-            left: 5px; bottom: 
-        
-            
-
-           
-            color:rgb(51, 11, 171);
-            background-color: white;
-            border: 2px solid rgb(30, 30, 106);
-            border-radius: 100% 0% 0% 0%;
-        }
-        &:hover{
-            color: white;
-            background-color: blue;
-        }
-        #twitt{
-            position: relative;
-            left: 4px;
-            font-size: 42px;
-            padding: 15px;
-          
-            color:rgb(10, 71, 194);
-            background-color: white;
-            border: 2px solid rgb(30, 30, 106);
-            border-radius: 0% 0% 0% 100%;
-
-        }
-        
-        
-    }
-    .insta-yt{
-        
-        display: flex;
-        flex-direction: column;
-        // justify-content: flex-start;
-        // align-items: center;
-        position: relative;
-        top: 0;
-        right: 1%;
-        gap: 1%;
-        background-color: rgb(255, 254, 254);
-        color: black;
-        width: 0%;
-        height: 100%;
-      
-        align-items: center;
-        justify-content: center;
-    }
-    #insta{
-        font-size: 43px;
-        padding: 15px;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-evenly;
+    
+    // background-color: rgb(19, 19, 237);
+    a{
+        text-decoration: none;
+        color: white;
        
-        color:rgb(231, 64, 220);
-        background-color: white;
-        border: 2px solid rgb(30, 30, 106);
-        border-radius: 0% 100% 0% 0%;
     }
-    #yt{
-        font-size: 45px;
-        padding: 12px;
-        
-        color:rgb(168, 20, 20);
-        background-color: white;
-        border: 2px solid rgb(30, 30, 106);
-        border-radius: 0% 0% 100% 0%;
+    div{
+        #instagram{
+            font-size: x-large;
+        }
+        #facebook{
+            font-size: x-large;
+        }
+        #twitter{
+            font-size: x-large;
+        }
+        #youtube{
+            font-size: x-large;
+        }
     }
-    .instagram{
-      
-    }
-   
+}
+.social-div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: fit-content;
+    gap: 10%;
+    color: white;
+}
+.social-div-twitter{
+    display: flex;
+    align-items: center;
+    margin-right: 5%;
+    gap: 10%;
+    color: white;
 }
 
 
+.social-div       // Nahi kaam karra 
+{
+    #instagram{
+
+    }
+    .insta{
+
+    }
+    &.social-div:hover~#instagram,
+    &.social-div:hover~#instagram~.insta{
+        color: pink;
+    }
+}
