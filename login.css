@@ -1,0 +1,199 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.login-main-div {
+  display: flex;
+  background-color: rgb(45, 75, 83);
+  justify-content: space-evenly;
+  align-items: center;
+  height: 60vh;
+  margin-top: 10%;
+  font-family: poppins, sans-serif;
+}
+.login-main-div .login-greets {
+  border: 2px solid;
+  font-size: x-large;
+  color: cadetblue;
+  background-color: rgb(101, 158, 174);
+  height: 60%;
+  width: 40%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  line-height: 2;
+  border-radius: 0% 50% 50% 0%;
+}
+.login-main-div .login-greets h1 {
+  color: rgb(43, 6, 139);
+}
+.login-main-div .login-greets p {
+  font-family: poppins;
+  color: rgb(52, 16, 84);
+  font-size: medium;
+}
+.login-main-div .socials-accounts {
+  border: 1px solid black;
+  background-color: rgba(87, 124, 167, 0.646);
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 40%;
+  justify-content: center;
+  align-items: center;
+  gap: 7%;
+}
+.login-main-div .socials-accounts .subsocial-accounts {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  justify-content: space-around;
+  margin-left: 0%;
+  width: 40%;
+  font-size: x-large;
+  cursor: pointer;
+}
+.login-main-div .socials-accounts .subsocial-accounts a #signin-google {
+  color: rgb(70, 19, 225);
+}
+.login-main-div .socials-accounts .subsocial-accounts a #signin-facebook {
+  color: blue;
+}
+.login-main-div .socials-accounts .subsocial-accounts a #signin-instagram {
+  color: rgb(216, 27, 118);
+}
+.login-main-div .remember-me {
+  font-size: smaller;
+}
+.login-main-div .signin-button-div {
+  width: 12%;
+  height: 7%;
+  background-color: rgba(20, 138, 193, 0.763);
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.login-main-div .signin-button-div #signin-button {
+  color: white;
+  background-color: rgb(33, 33, 183);
+  padding: 5% 10%;
+  border: transparent;
+  border-radius: 100%;
+  cursor: pointer;
+}
+.login-main-div .signin-button-div #signin-button:hover {
+  background-color: green;
+}
+.login-main-div .login-information-username {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.login-main-div .login-information-username #email {
+  border: transparent;
+  padding: 2%;
+  border-radius: 20px;
+}
+.login-main-div .login-information-password {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.login-main-div .login-information-password #password {
+  border: transparent;
+  padding: 2%;
+  border-radius: 20px;
+}
+
+@media (max-width: 360px) {
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  #navuser-icon {
+    height: 100vh;
+    width: 100%;
+  }
+  .login-main-div {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(237, 237, 237);
+    justify-content: space-evenly;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    font-family: poppins, sans-serif;
+    margin-top: 0%;
+  }
+  .login-main-div .login-greets {
+    font-size: medium;
+    color: rgb(180, 194, 194);
+    width: 50%;
+    height: 15%;
+    background-color: blanchedalmond;
+    display: flex;
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 30px;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 5%;
+    margin-top: 0%;
+  }
+  .login-main-div .login-greets h1 {
+    font-size: 20px;
+  }
+  .login-main-div .login-greets p {
+    font-size: x-small;
+  }
+  .login-main-div .socials-accounts {
+    height: 80vh;
+    width: 100%;
+    background-color: darkgray;
+    gap: 5%;
+  }
+  .login-main-div .socials-accounts .subsocial-accounts {
+    align-items: center;
+    justify-content: flex-start;
+    justify-content: space-around;
+    margin-left: 0%;
+    width: 50%;
+    font-size: x-large;
+    cursor: pointer;
+  }
+  .login-main-div .socials-accounts .subsocial-accounts a #signin-google {
+    color: rgb(70, 19, 225);
+  }
+  .login-main-div .socials-accounts .subsocial-accounts a #signin-facebook {
+    color: blue;
+  }
+  .login-main-div .socials-accounts .subsocial-accounts a #signin-instagram {
+    color: rgb(216, 27, 118);
+  }
+  .login-main-div .signin-button-div {
+    height: 3%;
+    width: 15%;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .login-main-div .signin-button-div #signin-button {
+    color: rgb(255, 255, 255);
+    background-color: rgb(33, 33, 183);
+    padding: 5% 10%;
+    border: transparent;
+    border-radius: 10px;
+    cursor: pointer;
+  }
+  .login-main-div .signin-button-div #signin-button:hover {
+    background-color: green;
+  }
+}/*# sourceMappingURL=login.css.map */

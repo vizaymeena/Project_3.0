@@ -186,6 +186,23 @@ nav div ul li a {
   text-align: center;
 }
 
+.discover-more a {
+  text-decoration: none;
+  margin-left: 30%;
+  color: rgb(255, 255, 255);
+  border: 1px solid rgb(218, 7, 7);
+  padding: 1%;
+  background-color: red;
+  transition: 2s ease;
+}
+
+#discover-more:hover {
+  background-color: rgb(255, 255, 255);
+  border: 1px solid rgb(19, 0, 128);
+  color: rgb(6, 3, 178);
+  transition: 2s ease;
+}
+
 .finance {
   color: rgb(0, 0, 0);
   background-color: rgb(43, 66, 83);
@@ -492,18 +509,69 @@ nav div ul li a {
 }
 .social-accounts div #instagram {
   font-size: x-large;
+  background-color: white;
+  border: 2px solid rgb(247, 247, 247);
+  padding: 2%;
+  color: black;
+  border-radius: 100%;
+  transition: 2s ease;
 }
 .social-accounts div #facebook {
   font-size: x-large;
+  background-color: white;
+  border: 2px solid rgb(247, 247, 247);
+  padding: 2%;
+  color: black;
+  border-radius: 100%;
 }
 .social-accounts div #twitter {
   font-size: x-large;
+  background-color: white;
+  border: 2px solid rgb(247, 247, 247);
+  padding: 2%;
+  color: black;
+  border-radius: 100%;
+}
+.social-accounts div #twitter {
+  transition: 2s ease;
 }
 .social-accounts div #youtube {
   font-size: x-large;
+  background-color: white;
+  border: 2px solid rgb(247, 247, 247);
+  padding: 2%;
+  color: rgb(0, 0, 0);
+  border-radius: 100%;
+}
+.social-accounts div #youtube {
+  transition: 2s ease;
+}
+.social-accounts div .insta {
+  transition: 2s ease;
+}
+.social-accounts div #facebook {
+  transition: 2s ease;
+}
+.social-accounts .social-div2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: -moz-fit-content;
+  width: fit-content;
+  gap: 10%;
+  color: white;
+}
+.social-accounts .social-div4 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: -moz-fit-content;
+  width: fit-content;
+  gap: 10%;
+  color: white;
 }
 
-.social-div {
+.social-div1 {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -516,11 +584,35 @@ nav div ul li a {
 .social-div-twitter {
   display: flex;
   align-items: center;
-  margin-right: 5%;
-  gap: 10%;
+  margin-right: 7%;
+  gap: 14%;
   color: white;
 }
 
-.social-div.social-div:hover ~ #instagram, .social-div.social-div:hover ~ #instagram ~ .insta {
-  color: pink;
+.social-div1:hover #instagram,
+.social-div1:hover #instagram ~ .insta {
+  color: red;
+  transition: 2s ease;
+  transform: scale(1.1);
+}
+
+.social-div4:hover #youtube,
+.social-div4:hover #youtube ~ .yt {
+  color: red;
+  transition: 2s ease;
+  transform: scale(1.1);
+}
+
+.social-div-twitter:hover #twitter,
+.social-div-twitter:hover #twitter ~ .twitter {
+  color: rgb(8, 12, 249);
+  transition: 2s ease;
+  transform: scale(1.1);
+}
+
+.social-div2:hover #facebook,
+.social-div2:hover #facebook ~ .fb {
+  color: rgb(81, 0, 255);
+  transition: 2s ease;
+  transform: scale(1.1);
 }/*# sourceMappingURL=style.css.map */
