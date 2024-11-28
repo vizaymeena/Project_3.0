@@ -36,23 +36,287 @@ body {
   align-items: center;
 }
 
-.sub-audience {
-  height: 100vh;
-  width: 100%;
-  text-align: center;
+.audience-div {
+  color: red;
+  transition: 2s ease;
 }
-.sub-audience .audience-div-ya {
-  height: 60%;
-  width: 100%;
-  color: rgba(129, 130, 155, 0.584);
+.audience-div .para1 {
+  position: absolute;
+  left: 0;
+  right: 0;
+  z-index: -1;
+  width: 50%;
+  height: auto;
+  opacity: 0;
+  transition: 1s ease;
+  margin-left: 25%;
 }
-.sub-audience .audience-div-st {
-  color: rgba(129, 130, 155, 0.584);
-  height: 80vh;
-  width: 100%;
+.audience-div .highlight-span1 {
+  color: yellow;
+  display: block;
 }
 
-.sub-audience:hover ~ .audience-div-ya {
-  color: rgb(34, 0, 255);
-  transform: translateX(50px);
-}/*# sourceMappingURL=web-design.css.map */
+.whois-aud {
+  height: 30%;
+  margin-top: 10%;
+  transition: 2s all ease;
+}
+
+.whois-aud:hover {
+  color: rgba(33, 150, 111, 0.648);
+  transition: 2s all ease;
+}
+
+.whois-aud:hover ~ .audience-div > #audience-image {
+  transform: translate(40%, -10%);
+  transition: 2s ease;
+}
+
+.audience-div:hover > #audience-image {
+  transform: translate(30%, -30%);
+  transition: 3s ease;
+  gap: 10%;
+  height: 60%;
+  width: 70%;
+}
+
+#audience-image {
+  transition: 2s ease;
+}
+
+.audience-div:hover > .para1 {
+  z-index: 1;
+  transform: translate(-25%, 75%);
+  transition: 3s ease;
+  height: 50%;
+  width: 40%;
+  opacity: 0.9;
+  gap: 5%;
+}
+
+.accessibility {
+  display: flex;
+  color: blue;
+  display: flex;
+  flex-direction: column;
+  justify-content: bottom;
+  line-height: 1;
+  transition: 3s ease;
+}
+.accessibility h4 {
+  margin-bottom: 4%;
+  opacity: 0.3;
+  transition: 2s ease;
+}
+.accessibility p {
+  color: white;
+  height: 30%;
+  width: 30%;
+  opacity: 0;
+  transition: 2s ease;
+}
+
+.audience-div:hover > .accessibility {
+  transition: 2s ease;
+  transform: scale(1.1);
+}
+.audience-div:hover > .accessibility h4 {
+  color: green;
+  margin-bottom: 5%;
+  transition: 2s ease;
+  opacity: 1;
+  transition: 3s all ease;
+  transform: translateX(-20%);
+}
+.audience-div:hover > .accessibility p {
+  color: darkcyan;
+  opacity: 1;
+  transition: 3s all ease;
+  transform: translateX(-10%);
+}
+
+.call-to-call {
+  display: flex;
+  flex-direction: column;
+  line-height: 1;
+}
+
+.sub-audience {
+  transition: 2s ease;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  border: 1px solid rgb(153, 153, 217);
+  opacity: 0.5;
+}
+.sub-audience .audience-div-ya {
+  transition: 2s ease;
+  border: 1px solid green;
+  height: 50%;
+  width: 50%;
+  line-height: 1.3;
+  color: rgba(129, 130, 155, 0.584);
+  text-align: center;
+  margin-top: 26.4%;
+}
+.sub-audience .audience-div-ya h2 {
+  color: blue;
+}
+
+.young {
+  transition: 2s ease;
+  height: 50%;
+  width: 50%;
+  border: 1px solid red;
+  line-height: 1.3;
+  color: rgb(70, 82, 176);
+  text-align: center;
+}
+.young h3 {
+  color: red;
+}
+.young .highlight-span2 {
+  color: skyblue;
+}
+
+.highlight-span3 {
+  color: purple;
+}
+
+.sch-std-container {
+  height: 50%;
+  width: 50%;
+  text-align: center;
+  line-height: 1;
+  border: 1px solid yellow;
+  transition: 2s ease;
+  margin-top: 26.4%;
+}
+.sch-std-container h3 {
+  color: rgb(176, 143, 24);
+}
+.sch-std-container p {
+  color: rgb(34, 112, 118);
+}
+.sch-std-container img {
+  transition: 2s ease;
+}
+
+.sub-audience:hover > .audience-div-ya {
+  transition: 2s ease;
+  margin-top: 10%;
+  margin-left: 5%;
+  padding: 2%;
+  width: 35%;
+  height: 50%;
+  opacity: 1;
+}
+
+.sub-audience:hover > .young {
+  margin-top: 10%;
+  margin-right: 5%;
+  margin-left: 5%;
+  padding: 2%;
+  width: 45%;
+  height: 55%;
+  transition: 2s ease;
+  transform: perspective(800px);
+}
+.sub-audience:hover > .young img {
+  height: 70%;
+  width: 70%;
+  transition: 2s ease;
+}
+
+.sub-audience:hover > .sch-std-container {
+  height: 55%;
+  width: 40%;
+  padding: 2%;
+  line-height: 1.1;
+  transition: 2s ease;
+  margin-bottom: 2%;
+  margin-top: 10%;
+  margin-right: 3%;
+  transform: translateY(-10%);
+}
+.sub-audience:hover > .sch-std-container img {
+  transition: 2s all ease;
+}
+
+.audience-div-ya:hover {
+  background-color: rgb(13, 118, 211);
+  color: black;
+  margin-left: 5%;
+  border-radius: 10%;
+  box-sizing: border-box;
+  border-right: 2px solid blue;
+  border-bottom: 2px solid rgb(162, 122, 29);
+  box-shadow: 5px 5px green;
+  transform: perspective(1000px);
+}
+
+.audience-div-ya:hover ~ .young,
+.audience-div-ya:hover ~ .young ~ .sch-std-container {
+  height: 40%;
+  width: 40%;
+  font-size: small;
+  padding: 1%;
+  transform: translateY(-25%);
+}
+.audience-div-ya:hover ~ .young img,
+.audience-div-ya:hover ~ .young ~ .sch-std-container img {
+  height: 50%;
+  width: 60%;
+  transition: 2s ease;
+}
+
+.audience-div-ya:hover {
+  transform: scale(1.2);
+}
+
+.young:hover {
+  color: rgb(10, 54, 135);
+  background-color: rgb(33, 159, 152);
+  transition: 2s ease;
+  border-radius: 10%;
+  border-right: 2px solid blue;
+  border-bottom: 2px solid rgb(162, 122, 29);
+  box-shadow: 10px 10px green;
+  transform: perspective(1000px);
+}
+.young:hover span {
+  color: green;
+}
+
+.young:hover ~ .sch-std-container {
+  height: 40%;
+  width: 40%;
+  font-size: small;
+  padding: 1%;
+  transform: translateY(-30%);
+}
+.young:hover ~ .sch-std-container img {
+  height: 50%;
+  width: 60%;
+  transition: 2s ease;
+}
+
+.young:hover {
+  transform: scale(1.4);
+}
+
+.sch-std-container:hover {
+  line-height: 1.2;
+  border-radius: 10%;
+  border-right: 2px solid blue;
+  border-bottom: 2px solid rgb(162, 122, 29);
+  box-shadow: 5px 5px green;
+  background-color: rgb(38, 86, 125);
+}
+.sch-std-container:hover p {
+  color: rgb(125, 181, 55);
+}
+.sch-std-container:hover img {
+  margin-top: 4%;
+}/*# sourceMappingURL=about.css.map */

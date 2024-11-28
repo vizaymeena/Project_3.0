@@ -455,6 +455,17 @@ nav div ul li a {
   font-size: large;
 }
 
+.click-here {
+  width: 10%;
+  height: 5%;
+}
+.click-here a {
+  padding: 5%;
+  color: blue;
+  text-decoration: none;
+  border: 1px solid blue;
+}
+
 .footer-nav-container {
   display: flex;
   justify-content: space-around;
