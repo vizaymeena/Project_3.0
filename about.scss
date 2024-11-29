@@ -13,6 +13,15 @@ body{
     height: 100vh;
     width: 100%;
 }
+@media(max-width:360px){
+    body{
+        background-color: rgb(28, 25, 25);
+        font-family: Verdana, Tahoma, sans-serif;
+        font-size: 14px;
+        font-weight: 600;
+    }
+    
+}
 
 
 //   web-div1 << Starts 
@@ -25,7 +34,6 @@ body{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 5%;
     height: 100vh;
     width: 100%;
 
@@ -44,6 +52,41 @@ body{
             }
         }
     }
+
+@media(max-width:360px){
+    .title-audience{
+        height: 120vh;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        .whois-aud{
+            padding: 5%;
+            height: 10%;
+            width: 100%;
+            font-size: small;
+
+        }
+        .audience-div{
+            height: 100vh;
+            width: 100%;
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            flex-direction: column;
+        }
+        #audience-image{
+            position: static;
+            transform: translate(none);
+            height: 360px;
+            width: 360px;
+            transition: none;
+
+        }
+    }
+}                                        //  Media query for Audience-div ends here upto image resizing
+
     .audience-div{
         color: red;
         transition: 2s ease;
@@ -64,6 +107,32 @@ body{
          display: block;  
        }
 }
+
+
+@media(max-width:360px){
+    .audience-div{
+        color: blue;
+        display: flex;
+        flex-direction: column;
+        position: static;
+        transform: none;
+        transition: none;
+        .para1{
+            position: static;
+            left: 0;
+            right: 0;
+            color: white;
+            height: 50%;
+            width: 50%;
+            text-align: center;
+            z-index: 1;
+            margin-left: 0%;
+            transform: none;
+            transition: none;
+        }
+    }
+    
+}
 // Whois-aud div " Styling STARTs " here...
 .whois-aud{
     height: 30%;
@@ -81,9 +150,30 @@ body{
     transition: 2s ease;
     
 }
+@media(maxwidth:360px){
+    .whois-aud{
+        height: 10%;
+        margin-top: 5%;
+        transition: none;
+    }
+    .whois-aud:hover{
+        color: rgba(33, 150, 111, 0.648);
+        transition: none;
+       
+    
+    }
+    .whois-aud:hover ~ .audience-div > #audience-image {
+        transform: none;
+        transition: none;
+        
+        
+    }
+
+}
 
 
 // whois-aud " Styling ENDs " here ...
+
 
 
 
@@ -92,7 +182,7 @@ body{
 .audience-div:hover > #audience-image {
     transform: translate(30% , -30%);
     transition: 3s ease;
-    gap: 10%;
+   
     height: 60%; width: 70%;
 }
 #audience-image{
@@ -107,6 +197,29 @@ body{
     opacity: 0.9;
     gap: 5%;
 }
+@media(max-width:360px){
+    .audience-div:hover > .para1{
+        transform: none;
+        transition: none;
+        opacity: 1;
+        height: 50%;
+        width: 50%;
+        #audience-image{
+            transition: none;
+        }
+        .audience-div:hover > #audience-image {
+            transform: none;
+            transition: none;
+           
+            height: 50%; 
+            width: 50%;
+        }
+    }
+
+}
+ 
+// Above media query ends 
+
 
 // Accessibility " >> Styl STARTs " here ....
 
@@ -162,25 +275,95 @@ body{
     line-height: 1;
 }
 
-// title-audience div  " Ends " << from Here ...
+@media(max-width:360px){
 
-//  sub-audience div >> " Starts " from here ...
+
+
+
+
+
+
+
+
+
+
+
+
+    .accessibility{
   
+        display: flex;
+      
+        color: blue;
+        display: flex;
+        flex-direction: column;
+        justify-content: bottom;
+        line-height: 1;
+        transition: non2;
+        h4{
+            margin-bottom: 4%;
+            opacity: 1;
+            transition: none;
+        }
+        p{
+            color: white;
+            height: 30%; width: 100%;
+            opacity: 1;
+            transition: none;
+        }
+    }
+    
+    .audience-div:hover > .accessibility {
+             
+        transition: none;
+        transform: none;
+        h4{
+            color: rgb(23, 12, 118);
+            margin-bottom: 3%;
+            
+            opacity: 1;
+            transition: none;
+            transform: none;
+         }
+         p{
+            color: darkcyan;
+            opacity: 1;
+            transition: none;
+            transform: none;
+         }
+        
+    }
+    // Accessibility " << Styl ENDs " here ....
+    
+    .call-to-call{
+        
+        display: flex;
+        flex-direction: column;
+        line-height: 0.8;
+    }
+
+}  
+
+
+// Media query of accessibility ends here ...
+
+
+
+
 .sub-audience{
-    transition: 2s ease;
+    transition: none;
     height: 100vh;
     width: 100%; 
     display: flex;
     justify-content: flex-end;
     border: 1px solid rgb(153, 153, 217);
-    opacity: 0.5;
+    opacity: 1;
    
     .audience-div-ya{
-        transition: 2s ease;
+        transition: none;
         border: 1px solid green;
         height: 50%;
         width: 50%;
-        line-height: 1.3;
+        line-height: 1;
         color: rgba(129, 130, 155, 0.584);
         text-align: center;
         margin-top: 26.4%;
@@ -190,11 +373,11 @@ body{
     }
 }
 .young{
-    transition: 2s ease;
+    transition: none;
     height: 50%;
     width: 50%;
     border: 1px solid red;
-    line-height: 1.3;
+    line-height: 1;
     color: rgb(70, 82, 176);
     text-align: center;
     h3{
@@ -213,7 +396,7 @@ body{
     text-align: center;
     line-height: 1;
     border: 1px solid yellow;
-    transition: 2s ease;
+    transition: none;
     margin-top: 26.4%;
     h3{
         color: rgb(176, 143, 24);
@@ -376,4 +559,74 @@ body{
 
 .audience-div-st{
     
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100%;
+
 }
+.sub_audience-div-st{
+   
+    margin-top: 10%;
+    transition: 2s all ease;
+    text-align: center;
+    line-height: 1.3;
+    height: 50%;
+    width: 50%;
+    border: 2px solid green;
+    h2{
+        color: rgb(134, 126, 130);
+    }
+    p{
+        color: rgb(114, 56, 169);
+    }
+}
+.sub_audience-div-st:hover{
+    background-color: rgb(170, 175, 176);
+    border-radius: 10%;
+    border: transparent;
+    transform: translateX(-40%);
+    height: 40%; width: 40%;
+    box-shadow: 5px 5px rgb(74, 10, 10);
+    transition: 2s all ease;
+    line-height: 1.2;
+    h2{
+        color: rgb(23, 122, 24);
+    }
+    p{
+        color: rgb(69, 39, 160);
+    }
+    img{
+        margin-top: 4%;
+        height: 30%; width: 40%;
+    }
+}
+.thank-you{
+    // height: 100vh;
+    // width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    color: rgb(113, 109, 111);
+    margin-bottom: 5%;
+    transition: 3s all ease;
+    opacity: 0;
+}
+
+.sub_audience-div-st:hover~.thank-you{
+    margin-top: 5%;
+    width: fit-content;
+    border-bottom: 2px solid red;
+    margin-left: 50%;
+    transform: rotateX(30deg);
+    opacity: 1;
+    transition: 3s all ease;
+    transition-delay: 0.5;
+}
+
+
+
+
+

@@ -6,7 +6,7 @@ body{
     // overflow-x: hidden ;
 }
 
-// Navbar Section Display flex and other styling starts here :- 
+// Navbar Section and subclasses styling starts here :- 
 
 #checkbox{
     display: none;
@@ -109,12 +109,49 @@ nav{
     
     // HEADER ENDS
 
-    //  MAin STARTS
-    // .container-section{
-    //     background-color: rgb(0, 0, 0);
-    //     width: 100vw; height: 100vh;
-    // }
+    @media(max-width:400px){
+        #HOME{
+            display: flex;
+            width: 100%;
+            height: 30%;
+            flex-direction: column;
+        }
+        #checkbox{
+            display: block;
+            position: absolute;
+            // z-index: -1;
+        }
+        #burger-label{
+            display: block;
+            #burger{
+                display: block;
+                position: absolute;
+                top: 3%; left: 2%;
+            }
+        }
+        #nav{
+            display: flex;
+            justify-content: space-between;
+            h1{
+              margin-left: 30%;
+            }
 
+            .nav-container{
+               display: none;
+               height: 50vh;
+               width: 50%;
+            }
+        }
+        #checkbox:checked + #burger-label ~ #nav  > .nav-container {
+            display: block;
+            height: 50vh;
+        }
+    }
+
+    //  MAin STARTS
+    // 
+
+    // Section (id=home) Starts here
 .tagcontainer-div{
     height: 45vh; width: 100%;
     background-color: rgba(36, 128, 141, 0.781);
@@ -177,8 +214,83 @@ nav{
     color: blueviolet;
     transition: 1s ease;
 }
-// Section-1 Ends Here
-// Section-2 Starts Here
+// Section (id=home) ENDs here
+
+// Media Query section id+home starts
+
+@media(max-width:400px){
+    .tagcontainer-div{
+        height: 30vh; width: 100%;
+        background-color: rgba(36, 128, 141, 0.781);
+    }
+    
+     .headline{
+              h1{display: flex;
+                align-items: center;
+                width: 100%;
+                height: 20%;
+               
+                justify-content: center;
+                padding-top: 4% ;
+                font-family: serif;
+                
+                font-size: 30px ;
+                color: white;
+              }
+            }
+    .subhead-line{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: rgb(78, 78, 166);
+       
+        font-size: large;
+        padding-bottom: 10px;
+        height: 8%;
+       
+    }    
+    #search{
+        text-align: center;
+    }    
+    .search-bar{
+        padding: 2% 8%;
+        margin-top: 2%;
+        border-radius: 20px;
+        border: transparent;
+        text-align: center;
+        width: 50%;
+        position: relative;
+        z-index: 1;
+    
+    }
+    .btn-search{
+        text-align: center;
+        position: absolute;
+        right: 43%; top: 26.2%;
+        z-index: 1;
+        border: transparent;
+        border-radius: 15px;
+        padding: 8px 15px;
+        color: white;
+        background-color: rgb(47, 211, 175);
+        cursor: pointer;
+        transition: 1s ease;
+        
+    }
+    .btn-search:hover{
+        color: green;
+        background-color: white;
+        border: 2px solid green;
+        
+    }
+
+
+}
+
+
+//  and ends (Media-query)
+
+// Section (id=section-2) Starts Here
 #section-2{
     background-color: rgb(56, 110, 126);
     width: 100%;
@@ -271,7 +383,130 @@ nav{
     box-sizing: border-box;
     transition: 1s ease;
 }
+
+// Section (id=section-2) Ends Here
+
+
+@media (max-width:400px){
+    #section-2{
+        background-color: rgb(56, 110, 126);
+        width: 100vw;
+        height: 100vh;
+    }
+    .container-div2{
+        width: 100%; height: 100%;
+       
+       
+        gap: 0%;
+    }
+    .web-design{
+        width: 100%; height: 46%;
+        border: transparent;
+        border-radius: 20px;
+        padding: 5px;
+        position: relative;
+        bottom: 4%; 
+        line-height: 1;
+        
+        
+        background-color: white;
+        .discover-more{
+            margin-top: 4%;
+        }
+    }
+    .web-design:hover {
+        background-color: rgb(99, 131, 131);
+        p{
+            margin-top: 2%;
+        color: blueviolet;
+    }
+    }
+    .web-para{
+        color: gray;
+        line-height: 1.5;
+    }
+    .web-img{
+        padding-left: 25px;
+        padding-top: 15px;
+        height: 50%; width: 80%;
+        text-align: center;
+        
+    }
+    .discover-more{
+        a{
+            text-decoration: none;
+            margin-left: 30%;
+            color: rgb(255, 255, 255);
+            border: 1px solid rgb(218, 7, 7);
+            padding: 1%;
+            background-color: red;
+            transition: 2s ease;
+        }
+    }
+    #discover-more:hover{
+        background-color: rgb(255, 255, 255);
+        border: 1px solid rgb(19, 0, 128);
+        color: rgb(6, 3, 178);
+        transition: 2s ease;
+    }
+    .finance{
+        position: relative;
+        left: 0;
+        right: 0;
+        z-index: 1;
+        color: rgb(0, 0, 0);
+        background-color: rgb(43, 66, 83);
+        width: 100%; height: 46%;
+        border: transparent;
+        border-radius: 20px;
+        padding-left: 1%;
+        bottom: 2%;
+        line-height: 2;
+        .fin-para{
+            line-height: 1.1;
+            color: gray;
     
+        }
+    }
+    .fin-img{
+    
+        width: 250px; height: 120px;
+        padding-top: 20px; padding-left: 60px;
+    }
+    
+    .finance-more{
+        text-align: center;
+        text-decoration: none;
+        color: white;
+        border: transparent;
+        padding: 6px 10px;
+        border-radius: 12px;
+        margin-left: 130px;
+        line-height: 1;
+        background-color: aquamarine;
+        transition: 1s ease;
+    }
+    .finance-more:hover{
+        color: blue;
+        background-color: white;
+        outline: 1.5px solid blue;
+        box-sizing: border-box;
+        transition: 1s ease;
+    }
+    .finance:hover::before{
+        position: absolute;
+        z-index: 1;
+        left: 0 ;
+        right: 0 ;
+        content: "";
+        background-color: rgb(223, 10, 10);
+
+    }
+
+}
+    
+
+// Media query Ends {section-2}
 
 
 //  Browse Topics Section Starts Here
@@ -498,182 +733,234 @@ nav{
 
 
 
-.footer-nav-container{
-    display: flex;
-    justify-content: space-around;
-    height: 60vh;
-    width: 100%;
-    align-items: center;
-    background-color: black;
+// .footer-nav-container{
+//     display: flex;
+//     justify-content: space-around;
+//     height: 60vh;
+//     width: 100%;
+//     align-items: center;
+//     background-color: black;
 
-  .nav-links{
-    width: 10%;
-       .subclass-nav-links{
+//   .nav-links{
+//     width: 10%;
+//        .subclass-nav-links{
         
-        width: 100%;
-        height: auto;
-        // text-align: center;
-        padding: 3%;
-          li{
-           list-style: none;
+//         width: 100%;
+//         height: auto;
+//         // text-align: center;
+//         padding: 3%;
+//           li{
+//            list-style: none;
        
-          a{  
-            transition: 2s all ease;
-            line-height: 2.4;
-            color: rgb(255, 255, 255);
-            text-decoration: none;
-            padding: 2%;
-            width: 100%;
-           }
-           .anchor-BT{
-            display: inline-block;
-            height: fit-content;
-            transition: 2s all ease;
-           }
-           & :hover{
-            transition: 2s all ease;
-            color: rgb(115, 43, 182);
-            border-left: 2px solid red;
+//           a{  
+//             transition: 2s all ease;
+//             line-height: 2.4;
+//             color: rgb(255, 255, 255);
+//             text-decoration: none;
+//             padding: 2%;
+//             width: 100%;
+//            }
+//            .anchor-BT{
+//             display: inline-block;
+//             height: fit-content;
+//             transition: 2s all ease;
+//            }
+//            & :hover{
+//             transition: 2s all ease;
+//             color: rgb(115, 43, 182);
+//             border-left: 2px solid red;
             
-           }
+//            }
            
-           }
-         }
-        }
+//            }
+//          }
+//         }
         
-        }
+//         }
 
-        //  FOOTER SOCIAL ACCOUNTS DESIGNINGS STARTS
+//         //  FOOTER SOCIAL ACCOUNTS DESIGNINGS STARTS
 
-.social-accounts{
-    display: flex;
-    flex-direction: column;
-    width: 30%; height: 50%;
-    justify-content: center;
-    align-items: center;
-    justify-content: space-evenly;
+// .social-accounts{
+//     display: flex;
+//     flex-direction: column;
+//     width: 30%; height: 50%;
+//     justify-content: center;
+//     align-items: center;
+//     justify-content: space-evenly;
     
     
-    a{
-        text-decoration: none;
-        color: white;
+//     a{
+//         text-decoration: none;
+//         color: white;
        
-    }
-    div{
+//     }
+//     div{
         
-         #instagram{
-            font-size: x-large;
-            background-color: white;
-            border: 2px solid rgb(247, 247, 247);
-            padding: 2%;
-            color: black;
-            border-radius: 100%;
-            transition: 2s ease;
-        }
-        #facebook{
-            font-size: x-large;
-            background-color: white;
-            border: 2px solid rgb(247, 247, 247);
-            padding: 2%;
-            color: black;
-            border-radius: 100%;
-        }
+//          #instagram{
+//             font-size: x-large;
+//             background-color: white;
+//             border: 2px solid rgb(247, 247, 247);
+//             padding: 2%;
+//             color: black;
+//             border-radius: 100%;
+//             transition: 2s ease;
+//         }
+//         #facebook{
+//             font-size: x-large;
+//             background-color: white;
+//             border: 2px solid rgb(247, 247, 247);
+//             padding: 2%;
+//             color: black;
+//             border-radius: 100%;
+//         }
         
-        #twitter{
-            font-size: x-large;
-            background-color: white;
-            border: 2px solid rgb(247, 247, 247);
-            padding: 2%;
-            color: black;
-            border-radius: 100%;
+//         #twitter{
+//             font-size: x-large;
+//             background-color: white;
+//             border: 2px solid rgb(247, 247, 247);
+//             padding: 2%;
+//             color: black;
+//             border-radius: 100%;
             
-        }
-        #twitter{
-            transition: 2s ease;
-        }
-        #youtube{
-            font-size: x-large;
-            background-color: white;
-            border: 2px solid rgb(247, 247, 247);
-            padding: 2%;
-            color: rgb(0, 0, 0);
-            border-radius: 100%;
-        }
-        #youtube{
-            transition: 2s ease;
-        }
+//         }
+//         #twitter{
+//             transition: 2s ease;
+//         }
+//         #youtube{
+//             font-size: x-large;
+//             background-color: white;
+//             border: 2px solid rgb(247, 247, 247);
+//             padding: 2%;
+//             color: rgb(0, 0, 0);
+//             border-radius: 100%;
+//         }
+//         #youtube{
+//             transition: 2s ease;
+//         }
         
-        .insta{
-            transition: 2s ease;
-        }
-         #facebook{
-         transition: 2s ease;
-       }
-    }
-    .social-div2{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: fit-content;
-        gap: 10%;
-        color: white;
-    }
-    .social-div4{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: fit-content;
-        gap: 10%;
-        color: white;
-    }
-}
-.social-div1{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: fit-content;
-    gap: 10%;
-    color: white;
+//         .insta{
+//             transition: 2s ease;
+//         }
+//          #facebook{
+//          transition: 2s ease;
+//        }
+//     }
+//     .social-div2{
+//         display: flex;
+//         justify-content: center;
+//         align-items: center;
+//         width: fit-content;
+//         gap: 10%;
+//         color: white;
+//     }
+//     .social-div4{
+//         display: flex;
+//         justify-content: center;
+//         align-items: center;
+//         width: fit-content;
+//         gap: 10%;
+//         color: white;
+//     }
+// }
+// .social-div1{
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+//     width: fit-content;
+//     gap: 10%;
+//     color: white;
    
-}
-.social-div-twitter{
+// }
+// .social-div-twitter{
+//     display: flex;
+//     align-items: center;
+//     margin-right: 7%;
+//     gap: 14%;
+//     color: white;
+// }
+
+
+
+
+// .social-div1:hover #instagram,
+// .social-div1:hover #instagram ~ .insta   {
+//     color: red;
+//     transition: 2s ease;
+//     transform: scale(1.1);
+// }
+// .social-div4:hover #youtube,
+// .social-div4:hover #youtube ~ .yt  {
+//     color: red;
+//     transition: 2s ease;
+//     transform: scale(1.1);
+// }    
+// .social-div-twitter:hover #twitter,
+// .social-div-twitter:hover #twitter ~ .twitter  {
+//     color: rgb(8, 12, 249);
+//     transition: 2s ease;
+//     transform: scale(1.1);
+// }    
+// .social-div2:hover #facebook,
+// .social-div2:hover #facebook ~ .fb {
+//     color: rgb(81, 0, 255);
+//     transition: 2s ease;
+//     transform: scale(1.1);
+// }    
+
+
+//  Media Query Starts
+
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 40px 20px;
     display: flex;
-    align-items: center;
-    margin-right: 7%;
-    gap: 14%;
-    color: white;
-}
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .footer-section {
+    flex: 1 1 250px;
+    margin: 10px;
+  }
+  .footer-section h4 {
+    font-size: 18px;
+    border-bottom: 2px solid #fff;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+  }
+  .footer-section ul {
+    list-style: none;
+    padding: 0;
+  }
+  .footer-section ul li {
+    margin-bottom: 10px;
+  }
+  .footer-section ul li a {
+    color: #ccc;
+    text-decoration: none;
+  }
+  .footer-section ul li a:hover {
+    color: #fff;
+  }
+  .social-icons {
+    display: flex;
+    gap: 15px;
+  }
+  .social-icons a {
+    text-decoration: none;
+    font-size: 20px;
+    color: #ccc;
+  }
+  .social-icons a:hover {
+    color: #fff;
+  }
+  .copyright {
+    text-align: center;
+    margin-top: 20px;
+    flex-basis: 100%;
+  }
 
-
-
-
-.social-div1:hover #instagram,
-.social-div1:hover #instagram ~ .insta   {
-    color: red;
-    transition: 2s ease;
-    transform: scale(1.1);
-}
-.social-div4:hover #youtube,
-.social-div4:hover #youtube ~ .yt  {
-    color: red;
-    transition: 2s ease;
-    transform: scale(1.1);
-}    
-.social-div-twitter:hover #twitter,
-.social-div-twitter:hover #twitter ~ .twitter  {
-    color: rgb(8, 12, 249);
-    transition: 2s ease;
-    transform: scale(1.1);
-}    
-.social-div2:hover #facebook,
-.social-div2:hover #facebook ~ .fb {
-    color: rgb(81, 0, 255);
-    transition: 2s ease;
-    transform: scale(1.1);
-}    
-
-
- //  FOOTER SOCIAL ACCOUNTS DESIGNINGS STARTS
 
 
  

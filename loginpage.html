@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login and Signup</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+    
+    /*  DEFINED BODY RULES */
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #f0f0f0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+    }
+
+    /*  << BODY ENDED */
+    
+    .container {
+        background-color: #fff;
+        width: 350px;
+        padding: 20px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        border-radius: 10px;
+        position: relative;
+    }
+    
+    .form-container {
+        display: none;
+    }
+    
+    .form-container form {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+    .form-container h2 {
+        text-align: center;
+    }
+    
+    input {
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        font-size: 16px;
+    }
+    
+    button {
+        background-color: #007bff;
+        color: #fff;
+        border: none;
+        padding: 10px;
+        border-radius: 5px;
+        font-size: 16px;
+        cursor: pointer;
+    }
+    
+    button:hover {
+        background-color: #0056b3;
+    }
+    
+    p {
+        text-align: center;
+        font-size: 14px;
+    }
+    
+    a {
+        color: #007bff;
+        text-decoration: none;
+    }
+    
+    a:hover {
+        text-decoration: underline;
+    }
+    
+    .hidden {
+        display: none;
+    }
+    
+    /* Show signup form by default */
+
+    /* ::::: << Change class name to ( .sigin-container ) to show the default option of sign in */
+    .signup-container  {
+        display: block;
+    }
+    
+    /* Media Query for max width 400px */
+    @media (max-width: 400px) {
+        .container {
+            width: 90%;
+            padding: 10px;
+        }
+    
+        input,
+        button {
+            font-size: 14px;
+        }
+    
+        h2 {
+            font-size: 20px;
+        }
+    }
+    </style>
+</head>
+<body>
+    <main>
+        <section id="login-forum">
+    <div class="container">
+        <!-- Login Form -->
+        <div class="form-container login-container">
+            <form action="#">
+                <h2>Login</h2>
+                <input type="email" placeholder="Email" required>
+                <input type="password" placeholder="Password" required>
+                <button type="submit">Login</button>
+                <p>Don't have an account? <a href="#" onclick="toggleForms()">Sign Up</a></p>
+            </form>
+        </div>
+
+        <!-- Signup Form -->
+        <div class="form-container signup-container">
+            <form action="#">
+                <h2>Sign Up</h2>
+                <input type="text" placeholder="Full Name" required>
+                <input type="email" placeholder="Email" required>
+                <input type="password" placeholder="Password" required>
+                <button type="submit">Sign Up</button>
+                <p>Already have an account? <a href="#" >Login</a></p>
+            </form>
+        </div>
+    </div>
+</section>
+</main>
+
+
+  
+   
+</body>
+</html>
