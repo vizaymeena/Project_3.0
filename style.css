@@ -364,6 +364,7 @@ nav div ul li a {
     position: relative;
     bottom: 4%;
     line-height: 1;
+    transition: 2s ease;
     background-color: white;
   }
   .web-design .discover-more {
@@ -371,6 +372,7 @@ nav div ul li a {
   }
   .web-design:hover {
     background-color: rgb(99, 131, 131);
+    transition: 2s ease;
   }
   .web-design:hover p {
     margin-top: 2%;
@@ -445,14 +447,6 @@ nav div ul li a {
     outline: 1.5px solid blue;
     box-sizing: border-box;
     transition: 1s ease;
-  }
-  .finance:hover::before {
-    position: absolute;
-    z-index: 1;
-    left: 0;
-    right: 0;
-    content: "";
-    background-color: rgb(223, 10, 10);
   }
 }
 #BROWSE-TOPICS {
@@ -633,6 +627,37 @@ nav div ul li a {
   transform: translate(0px, -20px);
 }
 
+@media (max-width: 400px) {
+  #BROWSE-TOPICS {
+    width: 100%;
+    height: 217vh;
+  }
+  #BROWSE-TOPICS .content-container {
+    height: 150vh;
+  }
+  #BROWSE-TOPICS .browse-design {
+    width: 70%;
+    height: 25%;
+    margin-left: 4%;
+  }
+  #BROWSE-TOPICS .browse-design2 {
+    width: 70%;
+    margin-left: 4%;
+    margin-bottom: 5%;
+  }
+  #BROWSE-TOPICS .corporate-finance {
+    width: 80%;
+    height: 30%;
+    margin-left: 16%;
+    margin-bottom: 10%;
+  }
+  #BROWSE-TOPICS .private-finance {
+    width: 80%;
+    height: 30%;
+    margin-left: 16%;
+    margin-top: 5%;
+  }
+}
 .about-us {
   height: 40vh;
   width: 100%;
@@ -673,6 +698,28 @@ nav div ul li a {
   border: 1px solid blue;
 }
 
+@media (max-width: 400px) {
+  .click-here {
+    display: block;
+    width: -moz-fit-content;
+    width: fit-content;
+    transition: 2s ease;
+  }
+  .click-here a {
+    display: block;
+    padding: 5px;
+    height: 17px;
+    width: 75px;
+    text-align: center;
+  }
+  .click-here:hover a {
+    color: green;
+    background-color: white;
+    border: 1px solid green;
+    transition: 2s ease;
+    transform: scale(1.1);
+  }
+}
 footer {
   background-color: #333;
   color: #fff;

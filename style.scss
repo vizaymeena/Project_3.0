@@ -407,6 +407,7 @@ nav{
         position: relative;
         bottom: 4%; 
         line-height: 1;
+        transition: 2s ease;
         
         
         background-color: white;
@@ -416,6 +417,7 @@ nav{
     }
     .web-design:hover {
         background-color: rgb(99, 131, 131);
+        transition: 2s ease;
         p{
             margin-top: 2%;
         color: blueviolet;
@@ -493,15 +495,15 @@ nav{
         box-sizing: border-box;
         transition: 1s ease;
     }
-    .finance:hover::before{
-        position: absolute;
-        z-index: 1;
-        left: 0 ;
-        right: 0 ;
-        content: "";
-        background-color: rgb(223, 10, 10);
+    // .finance:hover::before{
+    //     position: absolute;
+    //     z-index: 1;
+    //     left: 0 ;
+    //     right: 0 ;
+    //     content: "";
+    //     background-color: rgb(223, 10, 10);
 
-    }
+    // }
 
 }
     
@@ -572,6 +574,8 @@ nav{
     padding: 1%;
     transition: 2s all ease;
 }
+
+
 
 // Hovering Web design making its siblings takes the same effects
 .browse-design:hover,
@@ -688,7 +692,47 @@ nav{
 
 }
 
-//  FOOTER STARTS HERE :-
+
+// <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<:::::::: "" Media Query for browse-topics Starts
+
+@media(max-width:400px){
+    #BROWSE-TOPICS{
+        width: 100%;
+        height: 217vh;
+    .content-container{
+        height: 150vh;
+    }
+   
+     .browse-design{
+      width: 70%;
+      height: 25%;
+      margin-left: 4%;
+     }
+     .browse-design2{
+        width: 70%;
+        margin-left: 4%;
+        margin-bottom: 5%;
+     }
+     .corporate-finance{
+        width: 80%;
+        height: 30%;
+        margin-left: 16%;
+        margin-bottom: 10%;
+     }
+     .private-finance{
+        width: 80%;
+        height: 30%;
+        margin-left: 16%;
+        margin-top: 5%;
+     }
+ 
+}
+}
+
+
+//  <<<<<<<---- MEDIA QUERY for browse-topic structure ends here
+
+//  about-us STARTS HERE :-
 
 .about-us{
     height: 40vh;
@@ -730,186 +774,33 @@ nav{
 
 }
 
+//  ABout us Ends ..
+
+@media(max-width:400px){
+    .click-here{
+       display: block;
+       width: fit-content;
+        transition: 2s ease;
+      
+        a{  
+            display: block;
+            padding: 5px;
+            height: 17px;
+            width: 75px;
+            text-align: center;
+        }
+    }
+    .click-here:hover a{
+        color: green;
+        background-color: white;
+        border: 1px solid green;
+        transition: 2s ease;
+        transform: scale(1.1);
+    }
+}
 
 
-
-// .footer-nav-container{
-//     display: flex;
-//     justify-content: space-around;
-//     height: 60vh;
-//     width: 100%;
-//     align-items: center;
-//     background-color: black;
-
-//   .nav-links{
-//     width: 10%;
-//        .subclass-nav-links{
-        
-//         width: 100%;
-//         height: auto;
-//         // text-align: center;
-//         padding: 3%;
-//           li{
-//            list-style: none;
-       
-//           a{  
-//             transition: 2s all ease;
-//             line-height: 2.4;
-//             color: rgb(255, 255, 255);
-//             text-decoration: none;
-//             padding: 2%;
-//             width: 100%;
-//            }
-//            .anchor-BT{
-//             display: inline-block;
-//             height: fit-content;
-//             transition: 2s all ease;
-//            }
-//            & :hover{
-//             transition: 2s all ease;
-//             color: rgb(115, 43, 182);
-//             border-left: 2px solid red;
-            
-//            }
-           
-//            }
-//          }
-//         }
-        
-//         }
-
-//         //  FOOTER SOCIAL ACCOUNTS DESIGNINGS STARTS
-
-// .social-accounts{
-//     display: flex;
-//     flex-direction: column;
-//     width: 30%; height: 50%;
-//     justify-content: center;
-//     align-items: center;
-//     justify-content: space-evenly;
-    
-    
-//     a{
-//         text-decoration: none;
-//         color: white;
-       
-//     }
-//     div{
-        
-//          #instagram{
-//             font-size: x-large;
-//             background-color: white;
-//             border: 2px solid rgb(247, 247, 247);
-//             padding: 2%;
-//             color: black;
-//             border-radius: 100%;
-//             transition: 2s ease;
-//         }
-//         #facebook{
-//             font-size: x-large;
-//             background-color: white;
-//             border: 2px solid rgb(247, 247, 247);
-//             padding: 2%;
-//             color: black;
-//             border-radius: 100%;
-//         }
-        
-//         #twitter{
-//             font-size: x-large;
-//             background-color: white;
-//             border: 2px solid rgb(247, 247, 247);
-//             padding: 2%;
-//             color: black;
-//             border-radius: 100%;
-            
-//         }
-//         #twitter{
-//             transition: 2s ease;
-//         }
-//         #youtube{
-//             font-size: x-large;
-//             background-color: white;
-//             border: 2px solid rgb(247, 247, 247);
-//             padding: 2%;
-//             color: rgb(0, 0, 0);
-//             border-radius: 100%;
-//         }
-//         #youtube{
-//             transition: 2s ease;
-//         }
-        
-//         .insta{
-//             transition: 2s ease;
-//         }
-//          #facebook{
-//          transition: 2s ease;
-//        }
-//     }
-//     .social-div2{
-//         display: flex;
-//         justify-content: center;
-//         align-items: center;
-//         width: fit-content;
-//         gap: 10%;
-//         color: white;
-//     }
-//     .social-div4{
-//         display: flex;
-//         justify-content: center;
-//         align-items: center;
-//         width: fit-content;
-//         gap: 10%;
-//         color: white;
-//     }
-// }
-// .social-div1{
-//     display: flex;
-//     justify-content: center;
-//     align-items: center;
-//     width: fit-content;
-//     gap: 10%;
-//     color: white;
-   
-// }
-// .social-div-twitter{
-//     display: flex;
-//     align-items: center;
-//     margin-right: 7%;
-//     gap: 14%;
-//     color: white;
-// }
-
-
-
-
-// .social-div1:hover #instagram,
-// .social-div1:hover #instagram ~ .insta   {
-//     color: red;
-//     transition: 2s ease;
-//     transform: scale(1.1);
-// }
-// .social-div4:hover #youtube,
-// .social-div4:hover #youtube ~ .yt  {
-//     color: red;
-//     transition: 2s ease;
-//     transform: scale(1.1);
-// }    
-// .social-div-twitter:hover #twitter,
-// .social-div-twitter:hover #twitter ~ .twitter  {
-//     color: rgb(8, 12, 249);
-//     transition: 2s ease;
-//     transform: scale(1.1);
-// }    
-// .social-div2:hover #facebook,
-// .social-div2:hover #facebook ~ .fb {
-//     color: rgb(81, 0, 255);
-//     transition: 2s ease;
-//     transform: scale(1.1);
-// }    
-
-
-//  Media Query Starts
-
+//  FOOTER SECTIONS STARTS HERE << 
 
 footer {
     background-color: #333;
@@ -961,6 +852,8 @@ footer {
     flex-basis: 100%;
   }
 
+
+//   FOOTER ENDS HERE <<
 
 
  
